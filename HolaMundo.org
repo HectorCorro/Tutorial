@@ -1,0 +1,66 @@
+#+Title:     Tutorial
+#+Author:    Héctor Corro
+#+Email:     hecorroza88@gmail.com
+#+DATE:      2017
+#+DESCRIPTION: Repaso general
+#+KEYWORDS:  data product review data-science
+#+LANGUAGE:  es
+
+#+STARTUP: beamer
+#+STARUP: oddeven
+
+#+LaTeX_CLASS: beamer
+
+#+LaTeX_HEADER: \usepackage{fontspec}
+#+LaTeX_HEADER: \setmainfont{FreeSerif}
+#+LaTeX_HEADER: \setsansfont{FreeSans}
+#+LaTeX_HEADER: \setmonofont{Latin Modern Mono}
+
+#+LaTeX_CLASS_OPTIONS: [presentation, smaller]
+
+#+BEAMER_THEME: DarkConsole
+
+#+OPTIONS: H:1 toc:nil 
+
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+
+#+PROPERTY: header-args    :cache yes
+#+PROPERTY: header-args:shell :results output :exports both :tangle no
+
+#+COLUMNS: %20ITEM %13BEAMER_env(Env) %6BEAMER_envargs(Args) %4BEAMER_col(Col) %7BEAMER_extra(Extra)
+
+
+** Bambalinas                                                      :noexport:
+
+#+begin_src shell :var TANGLED=(org-babel-tangle)
+  wc $TANGLED
+#+end_src
+
+
+* Introducción
+
+Vamos a repasar (muy rápidamente) lo aprendido en /Programming for Data Science/
+durante el semestre pasado.
+
+
+* Algunas instalaciones necesarias
+
+- Programas (en =Ubuntu=)
+
+#+BEGIN_EXAMPLE shell 
+## Para conectarse a bases de datos PostgreSQL
+> sudo apt-get install libpq-dev
+## Para manipular JSON en consola
+> sudo apt-get install jq
+## Una vaca chistosa
+> sudo apt-get install cowsay
+#+END_EXAMPLE
+
+- Paquetes de  =python=
+
+#+BEGIN_EXAMPLE
+> pip install -r requirements.txt
+> pip install -r requirements-dev .txt
+#+END_EXAMPLE
+
