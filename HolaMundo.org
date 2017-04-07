@@ -43,7 +43,13 @@
 Vamos a repasar (muy rápidamente) lo aprendido en /Programming for Data Science/
 durante el semestre pasado.
 
+* AWS
+- Acceder a instancia
+#+BEGIN_EXAMPLE shell 
+ssh -i /PERMISO.pem Public_DNS
 
+
+#+END_EXAMPLE
 * Algunas instalaciones necesarias
 
 - Programas (en =Ubuntu=)
